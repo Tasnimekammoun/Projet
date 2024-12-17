@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore my personal portfolio to discover innovative projects and technical expertise, showcasing a commitment to quality and creativity.">
+    <meta name="keywords" content="Portfolio Port-folio portefeuille perosnalportfolio machine learning html css js developpement web competence">
+    <title>Skills-tasnimekammoun</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header>
+        <h1>Skills</h1>
+        <a href="../index.html"> <button>profile</button></a>
+        <a href="parcour.html"> <button>Journey</button></a>
+        <a href="passion.html"> <button>Passions</button></a>
+        <a href="quiz.html"> <button>Quiz</button></a>
+        <a href="contact.html"> <button>Contact</button></a>
+    </header>
+
+    <section class="skills-tree">
+        <div class="skill-trunk">
+        </div>
+
+        <div class="skill-branches">
+            <div class="branch" id="python">
+                <h3>Python</h3>
+            </div>
+            <div class="branch" id="machine-learning">
+                <h3>Machine Learning</h3>
+            </div>
+            <div class="branch" id="big-data">
+                <h3>Big Data</h3>
+                
+            </div>
+        </div>
+
+        <div class="skill-leaves">
+            <div class="branch" id="html">
+                <h4>HTML</h4>
+            </div>
+            <div class="branch" id="css">
+                <h4>CSS</h4>
+            </div>
+            <div class="branch" id="js">
+                <h4>Java Script</h4>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="../img/email.png"><p><strong>Email:</strong> Kammountasnime@gmail.com</p>
+        <p><strong>Location:</strong> Sfax, Tunisia</p>
+      <a href="https://www.linkedin.com/in/tasnime-kammoun-b3bbba2a0/"><img src="../img/linkedin.png" alt="linkedin"></a>  
+</footer>
+    <script>document.querySelectorAll('.branch').forEach(branch => {
+    branch.addEventListener('mouseover', () => {
+        branch.style.transform = 'scale(1.1)';
+        branch.style.transition = '0.3s ease-in-out';
+    });
+    branch.addEventListener('mouseout', () => {
+        branch.style.transform = 'scale(1)';
+    });
+});
+</script>
+</body>
+</html>

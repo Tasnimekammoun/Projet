@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Quiz</h1>
+            <nav>
+                <a href="../index.html"><button>Profile</button></a>
+                <a href="competance.html"><button>Skills</button></a>
+                <a href="parcour.html"><button>Journey</button></a>
+                <a href="passion.html"><button>Quiz</button></a>
+                <a href="contact.html"><button>Contact</button></a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="quiz-container">
+        <form id="quiz-form" onsubmit="calculateResult(event)">
+            <h2>Answer the questions to discover your dessert preferences!</h2>
+            <div class="question">
+                <p>1. What type of flavors do you prefer?</p>
+                <label><input type="radio" name="q1" value="chocolate" required> Chocolate</label><br>
+                <label><input type="radio" name="q1" value="fruit"> Fruit</label><br>
+                <label><input type="radio" name="q1" value="original"> Unique flavors</label>
+            </div>
+            <div class="question">
+                <p>2. What format of dessert do you prefer?</p>
+                <label><input type="radio" name="q2" value="sharing" required> Desserts to share</label><br>
+                <label><input type="radio" name="q2" value="individual"> Individual desserts</label><br>
+                <label><input type="radio" name="q2" value="bites"> Small bites (cookies, macarons, etc.)</label>
+            </div>
+            <div class="question">
+                <p>3. What occasion inspires you to buy a dessert?</p>
+                <label><input type="radio" name="q3" value="everyday" required> Everyday treat</label><br>
+                <label><input type="radio" name="q3" value="event"> Special event</label><br>
+                <label><input type="radio" name="q3" value="gift"> A gourmet gift</label>
+            </div>
+            <div class="question">
+                <p>4. What texture do you prefer in a dessert?</p>
+                <label><input type="radio" name="q4" value="melty" required> Melty</label><br>
+                <label><input type="radio" name="q4" value="soft"> Soft</label><br>
+                <label><input type="radio" name="q4" value="crunchy"> Crunchy</label>
+            </div>
+            <div class="question">
+                <p>5. Do you prefer sweet or savory items?</p>
+                <label><input type="radio" name="q5" value="sweet" required> Sweet</label><br>
+                <label><input type="radio" name="q5" value="savory"> Savory</label>
+            </div>
+            <div class="question">
+                <p>6. What taste attracts you the most?</p>
+                <label><input type="radio" name="q6" value="caramel" required> Caramel</label><br>
+                <label><input type="radio" name="q6" value="lemon"> Lemon</label><br>
+                <label><input type="radio" name="q6" value="pistachio"> Pistachio</label>
+            </div>
+            <div class="question">
+                <p>7. What dessert presentation do you prefer?</p>
+                <label><input type="radio" name="q7" value="simple" required> Simple and classic</label><br>
+                <label><input type="radio" name="q7" value="luxurious"> Refined and luxurious</label><br>
+                <label><input type="radio" name="q7" value="creative"> Creative and unique</label>
+            </div>
+            <div class="question">
+                <p>8. What portion size do you prefer?</p>
+                <label><input type="radio" name="q8" value="small" required> Small portion</label><br>
+                <label><input type="radio" name="q8" value="large"> Large portion</label>
+            </div>
+            <div class="question">
+                <p>9. How often do you buy desserts?</p>
+                <label><input type="radio" name="q9" value="often" required> Often</label><br>
+                <label><input type="radio" name="q9" value="occasionally"> Occasionally</label><br>
+                <label><input type="radio" name="q9" value="rarely"> Rarely</label>
+            </div>
+            <div class="question">
+                <p>10. Are you interested in seasonal or special collections?</p>
+                <label><input type="radio" name="q10" value="yes" required> Yes</label><br>
+                <label><input type="radio" name="q10" value="no"> No</label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="../js/quiz.js"></script>
+
+    <footer>
+        <img src="../img/email.png"><p><strong>Email:</strong> Kammountasnime@gmail.com</p>
+        <p><strong>Location:</strong> Sfax, Tunisia</p>
+        <a href="https://www.linkedin.com/in/tasnime-kammoun-b3bbba2a0/"><img src="../img/linkedin.png" alt="linkedin"></a>  
+    </footer>
+</body>
+</html>
